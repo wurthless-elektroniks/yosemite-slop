@@ -494,12 +494,17 @@ Z values are the interpolated vertex Z (0–1) scaled to the buffer's range
 
 Don't chase these.
 
-- **Unreal under Mac OS 9 RAVE, intro flyby at 320×240.** As the camera turns
-  past the rock face beside the castle, a black triangle appears along the
-  right edge of the screen, and the texture next to it flickers. Both happen on
-  real hardware, with the retail release and with the 224 patch. The black is
-  probably just the reduced lighting setting. A per-pixel trace showed the
-  depth order and both texture passes are correct, and the texels read are
-  dark.
-- **Unreal under RAVE has other renderer problems of its own**, such as missing
-  fog. Compare against a real card before treating one as an emulation bug.
+### Unreal, Mac OS 9, RAVE renderer
+
+Unreal's RAVE renderer is buggy and causes problems on real hardware. These
+issues should happen both on the retail release and when the game is patched
+to version 224.
+
+- Fog effects are missing. Obvious examples are: moat in the intro flyby,
+  ventilation shafts in Vortex Rikers, crossroads/mining area in Depths of
+  Rrajigar, final teleporter in Outpost 3J, Illumination mothership generator
+  explosion, various areas in The Darkening.
+- Glitching/misshaped polygons: as the camera turns past the castle tower in the
+  flyby, a large mis-shaded polygon appears to the right of the screen, and, to the
+  right of that, there will be another polygon with a glitching texture.
+- Incorrect alpha rendering: leaves on trees in NyLeve's Falls have a black outline.

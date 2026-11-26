@@ -114,9 +114,9 @@ Engine" and exports `TtRegister` / `TtDeRegister`.
 - **SURFACE windows** (0x0B00–0x0B3C) are programmed. Mac OS 9 is the only
   driver seen doing this.
 
-Games checked against a real card: **Unreal** (RAVE renderer, retail and patch
-224) and **Nanosaur**. See the "looks wrong but matches hardware" section of
-[3d-engine.md](3d-engine.md).
+Games checked against a real card: **Unreal** (RAVE renderer, retail and patc
+224) and **Nanosaur**. See the "looks wrong but matches hardware" and
+"performance reference" sections of [3d-engine.md](3d-engine.md).
 
 Under Unreal:
 
